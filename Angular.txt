@@ -1,0 +1,77 @@
+AngularJS topics:-
+
+1) install Angular Project.						TypeScript:-
+	npm install -g @angular/cli@v						-Premitives
+										-complex Premitives
+2) create a new project								-Type Infrence 
+	ng new my-first-project							-Function , Generic , class, Interface. 
+   -change the directory								
+	cd my-first-project
+   -Run the project
+	ng serve
+	
+3) create a new Component						AngularJS Basics:-
+	ng g component my-first-component					-Adding new component
+										-component template, style and selectors.
+4) create a new module								-Data Binding :-
+	ng g module my-first-module							-String Interpolation
+											-Property Binding
+5) create Component with test file.							-Event Binding
+	ng g component my-first-component --skip-tests true				-Two way Binding
+											-Directives
+6) Install Bootstrap into project						     structural directives:-
+	npm install --save  bootstrap@v5.2.3						-*ngIf
+											-ngIf else
+										     Attribute directives:-				
+											-ngStyle
+											-ngClass
+											-*ngFor
+rxjs
+communication between Component
+Rounting
+ngrx				
+					
+					
+					
+										AngularProject:-									  						        RootComponent	    														      	
+		-Header-Component						    	
+		-Recipes								
+		   -Recipe-detail							
+		   -Recipe-list							   
+			-Recipe-item							
+		-Shoping-list							
+		   -Shoping-edit							
+			
+			
+			
+			
+Component & Data Binding Deep Dive:-
+	-Custom Property and Event Binding
+		-@Input()
+		-@Output()
+	-local Refrences in Template
+		-#serverNameInput
+	-View Encapsulation
+		encapsulation:ViewEncapsulation.Native
+					       .None
+					       .Emulated
+	-@Viewchild()
+		#serverContentInput
+		@Viewchild('serverContentInput',{static:true})serverInputContent:ElementRef;
+		this.serverContentInput.NativeElement.value
+	-ng-content
+		<ng-content></ng-content>
+	-component life-cycle
+		ngOnChanges()
+		ngOnInit()
+		ngDoCheck()
+		ngAfterContentInit()
+		ngAfterContentChecked()
+		ngAfterViewInit()
+		ngAfterViewChecked()
+		ngOnDestroy()
+		
+		
+	-life-cycle Hooks and Template Access
+		-ng-content with @ContentChild
+		
