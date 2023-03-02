@@ -107,3 +107,17 @@ https://drive.google.com/file/d/1KZ87w3s6nG_9oC11FU04l2aTb-xM4aQk/view
 
 
 https://drive.google.com/drive/folders/1ynfcdKqVcqNmi8GxebSmNpI3LVJUS3Tx
+
+
+node question:-
+**Problem Statement:I want to remove all keys that have values of N/A, - or an empty string. If one of these values appear in the array the I want to remove that single item from the array. So for instance my example output is this:
+
+{"name":{"first":"Daniel","middle":"N/A","last":"Smith"},"age":45}
+
+The output I expect is this
+
+{"name":{"first":"Daniel","last":"Smith"},"age":45}**
+
+Solution is 100% correct. Give Vote if given solution work.
+
+
