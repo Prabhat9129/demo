@@ -1,5 +1,18 @@
 AngularJS topics:-
-
+A) Node Version.
+	node -v
+	v19.1.0
+	
+B) NPM Version:-
+	npm -v
+	8.19.3	
+	
+c) Angular Version
+	ng version
+   Angular Cli:-15.1.6
+   Angular :- 15.2.0
+====================================   
+   								===========================================================================
 1) install Angular Project.						TypeScript:-
 	npm install -g @angular/cli@v						-Premitives
 										-complex Premitives
@@ -7,33 +20,38 @@ AngularJS topics:-
 	ng new my-first-project							-Function , Generic , class, Interface. 
    -change the directory								
 	cd my-first-project
-   -Run the project
+   -Run the project						===========================================================================	
 	ng serve
 	
 3) create a new Component						AngularJS Basics:-
-	ng g component my-first-component					-Adding new component
+	ng generate component my-first-component					-Adding new component
 										-component template, style and selectors.
 4) create a new module								-Data Binding :-
-	ng g module my-first-module							-String Interpolation
+	ng generate module my-first-module						-String Interpolation
 											-Property Binding
-5) create Component with test file.							-Event Binding
-	ng g component my-first-component --skip-tests true				-Two way Binding
+5) create Component without test file.							-Event Binding
+	ng generate component my-first-component --skip-tests true			-Two way Binding
 											-Directives
 6) Install Bootstrap into project						     structural directives:-
 	npm install --save  bootstrap@v5.2.3						-*ngIf
-											-ngIf else
-										     Attribute directives:-				
-											-ngStyle
+											-*ngIf else
+										     Attribute directives:-				==============================================================				-ngStyle
 											-ngClass
 											-*ngFor
+Important Topics:-											
+								===========================================================================
+ElementRef
+TemplateRef
+ViewContainerRef
+Renderer
 rxjs
 communication between Component
-Rounting
+Rounting								
 ngrx				
 					
 					
 					
-										AngularProject:-									  						        RootComponent	    														      	
+===============================================================										AngularProject:-									  						        RootComponent	    														      	
 		-Header-Component						    	
 		-Recipes								
 		   -Recipe-detail							
@@ -44,7 +62,7 @@ ngrx
 			
 			
 			
-			
+===============================================================			
 Component & Data Binding Deep Dive:-
 	-Custom Property and Event Binding
 		-@Input()
@@ -75,3 +93,36 @@ Component & Data Binding Deep Dive:-
 	-life-cycle Hooks and Template Access
 		-ng-content with @ContentChild
 		
+		
+		
+===============================================================================================		
+		
+		
+		
+Errors:-
+
+1)Property 'recipe' has no initializer and is not definitely assigned in the constructor
+	-
+	Just go to tsconfig.json and set
+		"compilerOptions": {
+    			"strictPropertyInitialization": false,
+    			...
+			}
+			
+=================================================================================================			
+			
+
+Directives Deep Dive:-
+
+	Renderer
+	@HostListerner
+	@HostBinding
+	ngSwitch 
+		-*ngSwitchCase
+		-*ngSwitchDefault
+	
+	
+==================================================================================================
+
+Using Services & Dependency Injection:-
+	
