@@ -125,4 +125,31 @@ Directives Deep Dive:-
 ==================================================================================================
 
 Using Services & Dependency Injection:-
+	- create service :-
+		export class myservice{
+		loadService(){}
+		}
 	
+	-Injecting myservice into component:-
+	   step-1) import { myservice } from './myServices'.
+	   step-2) @Component({
+	 		selector:
+			templateUrls:
+			provider:[myservice]
+		})
+	  step-3) constructor(service:myservice){}
+	  step-4) this.service.loadService().
+		
+	-Herachical of service Injector:-
+		1) AppModule
+		2) AppComponent
+		3) AnyotherComponent
+	
+	-Injecting services into services:-
+		1) Inject service into AppModule
+		2) Inject service into another service
+			@Injectable()
+			constructor(service:myservice){}
+			
+		
+=======================================================================================================		
